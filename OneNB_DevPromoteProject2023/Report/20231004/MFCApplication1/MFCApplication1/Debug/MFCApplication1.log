@@ -1,6 +1,0 @@
-﻿  MFCApplication1Dlg.cpp
-C:\Users\KJY\source\repos\MFCApplication1\MFCApplication1\MFCApplication1Dlg.cpp(262,21): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\KJY\source\repos\MFCApplication1\MFCApplication1\MFCApplication1Dlg.cpp(298,21): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\KJY\source\repos\MFCApplication1\MFCApplication1\MFCApplication1Dlg.cpp(333,21): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\KJY\source\repos\MFCApplication1\MFCApplication1\MFCApplication1Dlg.cpp(377,35): error C2661: 'CWnd::GetDlgItemTextW': 오버로드된 함수에서 1개의 인수를 사용하지 않습니다.
-C:\Users\KJY\source\repos\MFCApplication1\MFCApplication1\MFCApplication1Dlg.cpp(378,21): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
