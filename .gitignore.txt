@@ -1,4 +1,0 @@
-/OneNB_DevPromoteProject2023/Report/20231004/Calculator #1- 평가본/.vs
-/OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 진행 중/.vs
-*.suo
-*.iph
