@@ -1,4 +1,0 @@
-﻿  MFCApplication1Dlg.cpp
-C:\Users\KJY\Desktop\jykim\OneNB_DevPromoteProject2023\Report\20231004\계산기 개인 수정본\MFCApplication1\MFCApplication1Dlg.cpp(365,16): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\KJY\Desktop\jykim\OneNB_DevPromoteProject2023\Report\20231004\계산기 개인 수정본\MFCApplication1\MFCApplication1Dlg.cpp(366,16): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\KJY\Desktop\jykim\OneNB_DevPromoteProject2023\Report\20231004\계산기 개인 수정본\MFCApplication1\MFCApplication1Dlg.cpp : fatal error C1090: PDB API를 호출하지 못했습니다. 오류 코드 '3': C:\Users\KJY\Desktop\jykim\OneNB_DevPromoteProject2023\Report\20231004\계산기 개인 수정본\MFCApplication1\x64\Debug\vc142.pdb
