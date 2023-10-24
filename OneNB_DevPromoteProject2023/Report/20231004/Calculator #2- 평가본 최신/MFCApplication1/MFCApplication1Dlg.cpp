@@ -67,6 +67,7 @@ void CMFCApplication1Dlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
 	int a;
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
 	CString sMsg;
 	a = m_result.GetLength();
 	//m_result.Replace(_T(","), _T(""));
@@ -94,6 +95,16 @@ void CMFCApplication1Dlg::DoDataExchange(CDataExchange* pDX)
 		GetDlgItem(IDC_BTN_9)->EnableWindow(FALSE);
 
 	}
+========
+	a = m_result.GetLength();
+	if (a < 16)
+	{
+		
+		DDX_Text(pDX, IDC_RESULT_DISPLAY, m_result);
+
+	}
+	m_result.Replace(_T(","), _T(""));
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 
 
 	DDX_Text(pDX, IDC_CALC, m_recode);
@@ -222,9 +233,21 @@ void CMFCApplication1Dlg::OnBnClickedBtn0()
 			m_result.Empty();
 			m_equalClk = false;
 		}
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
 		m_result += _T("0");
 		m_result.Replace(_T(","), _T(""));
 		m_result = Comma(m_result);
+========
+		if (_tstof(m_result) < LLONG_MAX)
+		{
+			m_result += _T("0");
+			m_result.Replace(_T(","), _T(""));
+			m_result = Comma(_wtof(m_result));
+		}
+
+
+
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 		UpdateData(false);
 	}
 }
@@ -236,10 +259,22 @@ void CMFCApplication1Dlg::OnBnClickedBtn1()
 		m_result.Empty();
 		m_equalClk = false;
 	}
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
 
 	m_result += _T("1");
 	m_result.Replace(_T(","), _T(""));
 	m_result = Comma(m_result);
+========
+	if (_tstof(m_result) < LONG_MAX)
+	{
+		m_result += _T("1");
+		m_result.Replace(_T(","), _T(""));
+		m_result = Comma(_wtof(m_result));
+	}
+
+	UpdateData(false);
+
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 
 		UpdateData(false);
 }
@@ -251,6 +286,16 @@ void CMFCApplication1Dlg::OnBnClickedBtn2()
 		m_result.Empty();
 		m_equalClk = false;
 	}
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
+========
+	if (_tstof(m_result) < LLONG_MAX)
+	{
+		m_result += _T("2");
+		m_result.Replace(_T(","), _T(""));
+		m_result = Comma(_wtof(m_result));
+	}
+	UpdateData(false);
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 
 	m_result += _T("2");
 	m_result.Replace(_T(","), _T(""));
@@ -266,6 +311,16 @@ void CMFCApplication1Dlg::OnBnClickedBtn3()
 		m_result.Empty();
 		m_equalClk = false;
 	}
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
+========
+	if (_tstof(m_result) < LLONG_MAX)
+	{
+		m_result += _T("3");
+		m_result.Replace(_T(","), _T(""));
+		m_result = Comma(_wtof(m_result));
+	}
+	UpdateData(false);
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 
 	m_result += _T("3");
 	m_result.Replace(_T(","), _T(""));
@@ -280,10 +335,21 @@ void CMFCApplication1Dlg::OnBnClickedBtn4()
 		m_result.Empty();
 		m_equalClk = false;
 	}
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
 
 	m_result += _T("4");
 	m_result.Replace(_T(","), _T(""));
 	m_result = Comma(m_result);
+========
+	if (_tstof(m_result) < LLONG_MAX)
+	{
+		m_result += _T("4");
+		m_result.Replace(_T(","), _T(""));
+		m_result = Comma(_wtof(m_result));
+	}
+
+
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 	UpdateData(false);
 
 }
@@ -298,9 +364,20 @@ void CMFCApplication1Dlg::OnBnClickedBtn5()
 		m_equalClk = false;
 	}
 
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
 	m_result += _T("5");
 	m_result.Replace(_T(","), _T(""));
 	m_result = Comma(m_result);
+========
+	if (_tstof(m_result) < LLONG_MAX)
+	{
+		m_result += _T("5");
+		m_result.Replace(_T(","), _T(""));
+		m_result = Comma(_wtof(m_result));
+	}
+
+
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 	UpdateData(false);
 
 }
@@ -312,10 +389,20 @@ void CMFCApplication1Dlg::OnBnClickedBtn6()
 		m_result.Empty();
 		m_equalClk = false;
 	}
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
 
 	m_result += _T("6");
 	m_result.Replace(_T(","), _T(""));
 	m_result = Comma(m_result);
+========
+	if (_tstof(m_result) < LLONG_MAX)
+	{
+		m_result += _T("6");
+		m_result.Replace(_T(","), _T(""));
+		m_result = Comma(_wtof(m_result));
+	}
+
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 	UpdateData(false);
 
 }
@@ -327,10 +414,19 @@ void CMFCApplication1Dlg::OnBnClickedBtn7()
 		m_result.Empty();
 		m_equalClk = false;
 	}
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
 
 	m_result += _T("7");
 	m_result.Replace(_T(","), _T(""));
 	m_result = Comma(m_result);
+========
+	if (_tstof(m_result) < LLONG_MAX)
+	{
+		m_result += _T("7");
+		m_result.Replace(_T(","), _T(""));
+		m_result = Comma(_wtof(m_result));
+	}
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 	UpdateData(false);
 
 }
@@ -342,6 +438,18 @@ void CMFCApplication1Dlg::OnBnClickedBtn8()
 		m_result.Empty();
 		m_equalClk = false;
 	}
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
+========
+	if (_tstof(m_result) < LLONG_MAX)
+	{
+		m_result += _T("8");
+		printf("m_result : %f\n", _tstof(m_result));
+		m_result.Replace(_T(","), _T(""));
+		m_result = Comma(_wtof(m_result));
+
+	}
+	UpdateData(false);
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 
 		m_result += _T("8");
 		m_result.Replace(_T(","), _T(""));
@@ -356,6 +464,7 @@ void CMFCApplication1Dlg::OnBnClickedBtn9()
 	if (m_equalClk) {
 		m_result.Empty();
 		m_equalClk = false;
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
 
 	}
 
@@ -363,11 +472,34 @@ void CMFCApplication1Dlg::OnBnClickedBtn9()
 		m_result.Replace(_T(","), _T(""));
 		m_result = Comma(m_result);
 		UpdateData(false);
+========
+	}
+	if (_tstof(m_result) < LLONG_MAX)
+	{
+
+		m_result += _T("9");
+		sMsg.Format(_T("m_result1 : %s\n"), m_result);/////////////////////////////////
+		OutputDebugString(sMsg);//////////////////////////////////////////////////////
+		m_result.Replace(_T(","), _T(""));
+
+		sMsg.Format(_T("m_result1 : %s\n"), m_result);/////////////////////////////////
+		OutputDebugString(sMsg);//////////////////////////////////////////////////////
+		m_result = Comma(_wtof(m_result));
+
+		sMsg.Format(_T("m_result1 : %s\n"), m_result);/////////////////////////////////
+		OutputDebugString(sMsg);//////////////////////////////////////////////////////
+	}
+
+	UpdateData(false);
+
+
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 }
 
 //버튼 + 클릭 이벤트
 void CMFCApplication1Dlg::OnBnClickedBtnPlus()
 {
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
 	m_type = plus;
 
 	m_num = m_result;
@@ -382,7 +514,27 @@ void CMFCApplication1Dlg::OnBnClickedBtnPlus()
 	UpdateData(true);
 
 
+========
+	CString sMsg;
 
+	m_type = plus;
+	m_result.Replace(_T(","), _T(""));
+	m_num = m_result;
+	Calc();
+	m_result.Empty();
+	GetDlgItemText(IDC_RESULT_DISPLAY, m_result);
+	m_result = Comma(_wtof(m_result));
+	SetDlgItemText(IDC_RESULT_DISPLAY, m_result);
+	SetDlgItemText(IDC_CALC, m_num + "+");
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
+
+
+	m_equalClk = true;
+	UpdateData(true);
+	//sMsg.Format(_T("+9 : %s\n"), m_result);/////////////////////////////////
+	//OutputDebugString(sMsg);//////////////////////////////////////////////////////
+	//sMsg.Format(_T("=================================%s\n"), m_result);/////////////////////////////////
+	//OutputDebugString(sMsg);//////////////////////////////////////////////////////
 }
 
 //버튼 - 클릭 이벤트
@@ -390,17 +542,52 @@ void CMFCApplication1Dlg::OnBnClickedBtnMinus()
 {
 
 
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
+========
+
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 	m_type = minus;
+	m_result.Replace(_T(","), _T(""));
 	m_num = m_result;
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
 	m_result.Replace(_T(","), _T(""));
 	m_result = Comma(m_result);
 	SetDlgItemText(IDC_RESULT_DISPLAY, m_result);
+========
+	Calc();
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 	m_result.Empty();
 	GetDlgItemText(IDC_RESULT_DISPLAY, m_result);
-	SetDlgItemText(IDC_CALC, m_result + "-");
+	m_result = Comma(_wtof(m_result));
+	SetDlgItemText(IDC_RESULT_DISPLAY, m_result);
+	SetDlgItemText(IDC_CALC, m_num + "+");
+
+	UpdateData(true);
+
+
+}
+
+//버튼 / 클릭 이벤트
+void CMFCApplication1Dlg::OnBnClickedBtnDiv()
+{
+
+
+	m_type = divide;
+	m_num = m_result;
+	Calc();
+
+	m_result.Replace(_T(","), _T(""));
+	m_result = Comma(_wtof(m_result));
+	SetDlgItemText(IDC_RESULT_DISPLAY, m_result);
+	m_result.Empty();
+	GetDlgItemText(IDC_RESULT_DISPLAY, m_result);
+	SetDlgItemText(IDC_CALC, m_result + "/");
+	m_result.TrimRight(L"0");
+	m_result.TrimRight(L".");
 	m_equalClk = true;
 	UpdateData(true);
 
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
 
 }
 
@@ -422,6 +609,8 @@ void CMFCApplication1Dlg::OnBnClickedBtnDiv()
 	UpdateData(true);
 
 
+========
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 }
 
 //버튼 * 클릭 이벤트
@@ -430,8 +619,14 @@ void CMFCApplication1Dlg::OnBnClickedBtnMul()
 	m_type = multiply;
 	m_num = m_result;
 	m_result.Replace(_T(","), _T(""));
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
 	m_result = Comma(m_result);
 	SetDlgItemText(IDC_RESULT_DISPLAY, m_result);
+========
+	m_result = Comma(_wtof(m_result));
+	SetDlgItemText(IDC_RESULT_DISPLAY, m_result);
+	Calc();
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 	m_result.Empty();
 	GetDlgItemText(IDC_RESULT_DISPLAY, m_result);
 	SetDlgItemText(IDC_CALC, m_result + "*");
@@ -442,13 +637,20 @@ void CMFCApplication1Dlg::OnBnClickedBtnMul()
 //버튼 = 클릭 이벤트
 void CMFCApplication1Dlg::OnBnClickedBtnEqual()
 {
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
 	double op1, op2, result;
 	op1 = _tstof(m_num);
 	op2 = _tstof(m_result);
+========
+	CString sMsg;
+	double op1, op2, result;
+	op1, op2, result = 0;
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 
 
 	switch (m_type)
 	{
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
 	case plus:
 		result = op1 + op2;
 		break;
@@ -467,41 +669,11 @@ void CMFCApplication1Dlg::OnBnClickedBtnEqual()
 	default:
 		result = 0;
 		break;
-	}
+========
 
-	m_result.Format(_T("%f"), result);
-	m_result.TrimRight(L"0");
-	m_result.TrimRight(L".");
-	m_num_two.Format(_T("%f"), op2);
-	m_num_two.TrimRight(L"0");
-	m_num_two.TrimRight(L".");
-	m_result.Replace(_T(","), _T(""));
-	m_result = Comma(m_result);
-
-
-
-	SetDlgItemText(IDC_RESULT_DISPLAY, m_result);
-	UpdateData(FALSE);
-	SetDlgItemText(IDC_CALC, m_recode + m_num_two + "=");
-
-
-
-
-}
-
-
-
-
-
-//계산 함수 
-void CMFCApplication1Dlg::Calc()
-{
-	double op1, op2,op3, result;
-	if (!m_num.IsEmpty() && !m_result.IsEmpty())
-	{
 		op1 = _tstof(m_num);
 		op2 = _tstof(m_result);
-		op3 = _tstof(m_num);
+
 		switch (m_type)
 		{
 		case plus:
@@ -520,6 +692,91 @@ void CMFCApplication1Dlg::Calc()
 			else result = atof("0");
 			break;
 		default:
+			break;
+
+		}
+
+		m_result.Format(_T("%.6f"), result);
+		m_result.TrimRight(L"0");
+		m_result.TrimRight(L".");
+		m_result.Replace(_T(","), _T(""));
+		m_result = Comma(_wtof(m_result));
+
+		m_equalClk = true;
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
+	}
+
+	m_result.Format(_T("%f"), result);
+	m_result.TrimRight(L"0");
+	m_result.TrimRight(L".");
+	m_num_two.Format(_T("%f"), op2);
+	m_num_two.TrimRight(L"0");
+	m_num_two.TrimRight(L".");
+	m_result.Replace(_T(","), _T(""));
+	m_result = Comma(m_result);
+
+
+
+	SetDlgItemText(IDC_RESULT_DISPLAY, m_result);
+	UpdateData(FALSE);
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
+	SetDlgItemText(IDC_CALC, m_recode + m_num_two + "=");
+
+
+
+========
+	m_result.Empty();
+	GetDlgItemText(IDC_RESULT_DISPLAY, m_result);
+	SetDlgItemText(IDC_CALC, m_result + "=");
+	m_equalClk = true;
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
+
+}
+
+
+
+
+
+//계산 함수 
+void CMFCApplication1Dlg::Calc()
+{
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
+	double op1, op2,op3, result;
+	if (!m_num.IsEmpty() && !m_result.IsEmpty())
+	{
+		op1 = _tstof(m_num);
+		op2 = _tstof(m_result);
+		op3 = _tstof(m_num);
+========
+	double op1, op2, result;
+	result = 0;
+
+	if (!m_num.IsEmpty() && !m_result.IsEmpty())
+	{
+
+		op1 = _tstof(m_num);
+		op2 = _tstof(m_result);
+
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
+		switch (m_type)
+		{
+		case plus:
+			result = op1 + op2;
+			break;
+		case minus:
+			result = op1 - op2;
+			break;
+		case multiply:
+			result = op1 * op2;
+			break;
+		case divide:
+			if (op2 != 0) {
+				result = op1 / op2;
+			}
+			else result = atof("0");
+			break;
+		default:
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
 			result = 0.0;
 			break;
 
@@ -541,6 +798,22 @@ void CMFCApplication1Dlg::Calc()
 	SetDlgItemText(IDC_CALC, m_recode + m_num_two + "=");
 
 	//m_equalClk = true;
+========
+			break;
+		}
+
+		m_result.Replace(_T(","), _T(""));
+		m_result = Comma(_wtof(m_result));
+		m_result.Format(_T("%.f"));
+		m_result.TrimRight(L"0");
+		m_result.TrimRight(L".");
+
+
+		m_equalClk = true;
+		UpdateData(true);
+
+	}
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 
 
 }
@@ -548,6 +821,7 @@ void CMFCApplication1Dlg::Calc()
 void CMFCApplication1Dlg::OnBnClickedBtnC()
 {
 	m_recode.Empty();
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
 	m_result.Empty();
 	UpdateData(false);
 	GetDlgItem(IDC_BTN_1)->EnableWindow(TRUE);
@@ -578,6 +852,27 @@ void CMFCApplication1Dlg::OnBnClickedBtnDot()
 		UpdateData(false);
 	}
 
+========
+	m_num.Empty();
+	m_result.Empty();
+	UpdateData(false);
+}
+// dot 출력
+void CMFCApplication1Dlg::OnBnClickedBtnDot()
+{
+	if (m_result == "" || (m_result != "." && m_result != ""))
+	{
+		if (m_equalClk) {
+
+			m_result.Empty();
+			m_equalClk = false;
+		}
+		m_result += _T(".");
+
+		UpdateData(false);
+
+	}
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 }
 //버튼 BC 클릭 이벤트
 void CMFCApplication1Dlg::OnBnClickedBtnBc()
@@ -585,6 +880,7 @@ void CMFCApplication1Dlg::OnBnClickedBtnBc()
 	m_result.Delete(m_result.GetLength() - 1, 1);
 	m_result = Comma(m_result);
 	SetDlgItemText(IDC_RESULT_DISPLAY, m_result);
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
 	GetDlgItem(IDC_BTN_1)->EnableWindow(TRUE);
 	GetDlgItem(IDC_BTN_2)->EnableWindow(TRUE);
 	GetDlgItem(IDC_BTN_3)->EnableWindow(TRUE);
@@ -597,11 +893,14 @@ void CMFCApplication1Dlg::OnBnClickedBtnBc()
 	GetDlgItem(IDC_BTN_0)->EnableWindow(TRUE);
 
 
+========
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 }
 
 //버튼 Chs 클릭 이벤트
 void CMFCApplication1Dlg::OnBnClickedBtnChs()
 {
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.cpp
 	CString sMsg;
 	double Chs = _tstof(m_result); /*= GetDlgItemInt(IDC_RESULT_DISPLAY);*/
 
@@ -653,5 +952,44 @@ CString CMFCApplication1Dlg::Comma(CString nData)
 		}
 	
 		return strReturn;
+========
+	double m_value_two = GetDlgItemInt(IDC_RESULT_DISPLAY);
+	printf("m_result : %f\n", _tstof(m_result));////////////////////////
+
+	GetDlgItemText(IDC_RESULT_DISPLAY, m_result);
+	printf("m_result : %f\n", _tstof(m_result));////////////////////////
+
+	SetDlgItemText(IDC_CALC, m_result);
+
+	m_result.Format(L"%.6f", -1 * m_value_two);
+	printf("m_result : %f\n", _tstof(m_result));////////////////////////
+
+	m_result.TrimRight(L"0");
+	printf("m_result : %f\n", _tstof(m_result));////////////////////////
+
+	m_result.TrimRight(L".");
+	printf("m_result : %f\n", _tstof(m_result));////////////////////////
+
+	UpdateData(false);
+
+}
+
+CString CMFCApplication1Dlg::Comma(double nData)
+{
+	CString str, strReturn = _T("");
+
+	str.Format(_T("%.0f"), nData);
+
+	for (int i = 0; i < str.GetLength(); i++)
+	{
+		strReturn += str.GetAt(i);
+		if ((str.GetLength() - i) != 1 && (str.GetLength() - i) % 3 == 1)
+			strReturn += ',';
+
+	}
+
+	return strReturn;
+
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.cpp
 }
 

@@ -28,7 +28,10 @@
 #define IDC_BTN_DIV                     1024
 #define IDC_BTN_MUL                     1025
 #define IDC_BTN_DOT                     1026
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/resource.h
 #define IDC_CALC_2                      1029
+========
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/resource.h
 
 // Next default values for new objects
 // 

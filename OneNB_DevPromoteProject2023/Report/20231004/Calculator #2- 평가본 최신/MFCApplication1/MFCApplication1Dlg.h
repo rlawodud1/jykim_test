@@ -21,7 +21,11 @@ public:
 	CString m_num_two;
 	bool m_equalClk;
 	__int64 m_type;
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.h
 	CString CMFCApplication1Dlg::Comma(CString nData);
+========
+
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.h
 
 public:
 	void Calc();
@@ -67,8 +71,12 @@ public:
 	afx_msg void OnBnClickedBtnDiv();
 	afx_msg void OnBnClickedBtnMul();
 	afx_msg void OnBnClickedBtnDot();
+<<<<<<<< HEAD:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본 최신/MFCApplication1/MFCApplication1Dlg.h
 
 
+========
+	CString CMFCApplication1Dlg::Comma(double nData);
+>>>>>>>> 920e8466072cc9cce14d527826e36bda05af2a0d:OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 평가본/MFCApplication1/MFCApplication1Dlg.h
 };
 
 

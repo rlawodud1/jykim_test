@@ -1,0 +1,9 @@
+/OneNB_DevPromoteProject2023/Report/20231004/Calculator #1- 평가본/.vs
+/OneNB_DevPromoteProject2023/Report/20231004/Calculator #2- 진행 중/.vs
+*.suo
+<<<<<<< HEAD
+*.iph
+/.vs
+=======
+*.iph
+>>>>>>> e5ad64e0c1afc2b7c4d14acc3fc727a2cc9cf852
