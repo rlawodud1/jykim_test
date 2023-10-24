@@ -1,0 +1,5 @@
+﻿  MFCApplication1Dlg.cpp
+MFCApplication1.obj : warning LNK4258: '/entry:WinMainCRTStartup' 지시문은 '/ENTRY:wWinMainCRTStartup' 스위치와 호환되지 않습니다. 무시됩니다.
+MFCApplication1Dlg.obj : warning LNK4258: '/entry:WinMainCRTStartup' 지시문은 '/ENTRY:wWinMainCRTStartup' 스위치와 호환되지 않습니다. 무시됩니다.
+pch.obj : warning LNK4258: '/entry:WinMainCRTStartup' 지시문은 '/ENTRY:wWinMainCRTStartup' 스위치와 호환되지 않습니다. 무시됩니다.
+  MFCApplication1.vcxproj -> C:\Users\KJY\Desktop\jykim\OneNB_DevPromoteProject2023\Report\20231004\Calculator #2- 진행 중\Debug\MFCApplication1.exe

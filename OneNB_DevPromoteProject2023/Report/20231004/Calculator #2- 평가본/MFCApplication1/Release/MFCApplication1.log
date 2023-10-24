@@ -1,0 +1,10 @@
+﻿  MFCApplication1Dlg.cpp
+C:\Users\KJY\Desktop\jykim\OneNB_DevPromoteProject2023\Report\20231004\Calculator #2- 진행 중\MFCApplication1\MFCApplication1Dlg.cpp(371,73): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KJY\Desktop\jykim\OneNB_DevPromoteProject2023\Report\20231004\Calculator #2- 진행 중\MFCApplication1\MFCApplication1Dlg.cpp(375,40): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KJY\Desktop\jykim\OneNB_DevPromoteProject2023\Report\20231004\Calculator #2- 진행 중\MFCApplication1\MFCApplication1Dlg.cpp(400,73): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KJY\Desktop\jykim\OneNB_DevPromoteProject2023\Report\20231004\Calculator #2- 진행 중\MFCApplication1\MFCApplication1Dlg.cpp(404,40): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KJY\Desktop\jykim\OneNB_DevPromoteProject2023\Report\20231004\Calculator #2- 진행 중\MFCApplication1\MFCApplication1Dlg.cpp(489,11): error C3867: 'CMFCApplication1Dlg::LimitText': 비표준 구문입니다. '&'를 사용하여 멤버 포인터를 만드세요.
+C:\Users\KJY\Desktop\jykim\OneNB_DevPromoteProject2023\Report\20231004\Calculator #2- 진행 중\MFCApplication1\MFCApplication1Dlg.cpp(598,73): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KJY\Desktop\jykim\OneNB_DevPromoteProject2023\Report\20231004\Calculator #2- 진행 중\MFCApplication1\MFCApplication1Dlg.cpp(603,40): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KJY\Desktop\jykim\OneNB_DevPromoteProject2023\Report\20231004\Calculator #2- 진행 중\MFCApplication1\MFCApplication1Dlg.cpp(627,73): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KJY\Desktop\jykim\OneNB_DevPromoteProject2023\Report\20231004\Calculator #2- 진행 중\MFCApplication1\MFCApplication1Dlg.cpp(632,40): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.

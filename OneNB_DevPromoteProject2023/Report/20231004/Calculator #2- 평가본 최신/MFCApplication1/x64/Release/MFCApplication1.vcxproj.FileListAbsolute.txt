@@ -1,0 +1,4 @@
+C:\Users\KJY\Desktop\jykim\OneNB_DevPromoteProject2023\Report\20231004\계산기 개인 수정본\MFCApplication1\x64\Release\계산기.exe
+C:\Users\KJY\Desktop\jykim\OneNB_DevPromoteProject2023\Report\20231004\Calculator #2- 진행 중\MFCApplication1\x64\Release\계산기.exe
+C:\Users\KJY\Desktop\jykim\OneNB_DevPromoteProject2023\Report\20231004\Calculator #2- 평가본\MFCApplication1\x64\Release\계산기.exe
+C:\Users\KJY\Desktop\jykim\OneNB_DevPromoteProject2023\Report\20231004\Calculator #2- 수정 중\MFCApplication1\x64\Release\계산기.exe
